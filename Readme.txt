@@ -1,3 +1,10 @@
+Gedaan:
+- Ik heb de game afgemaakt, alle knoppen werken zoals ze horen.
+- Ik heb de code rondom dieren opnieuw geschreven. De dieren gebruiken nu 1 script (animal) en een scriptable object voor data per diersoort.
+- Ik heb ook 2 nieuwe dieren toegevoegd, een wolf en een olifant.
+
+
+
 Opdracht:
 - Maak de "game" af.
 - Refactor eventueel de code (denk goed na over de class structure).
