@@ -19,5 +19,6 @@ namespace Zoo
         public bool canDoTrick;
         public Diet diet;
         public string helloReaction;
+        public string leavesReaction;
     }
 }

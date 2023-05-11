@@ -270,5 +270,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66aaace4f1a28c14797bf15048a949c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Balloon: {fileID: 5971220968996603616}
+  text: {fileID: 6001778519343911678}
   image: {fileID: 6001211458753118524}
   animalData: {fileID: 11400000, guid: 5a43188120814df4d90ee63edcde79f2, type: 2}
+  animalName: 
+  canDoTrick: 0
+  diet: 0

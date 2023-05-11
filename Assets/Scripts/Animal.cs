@@ -7,25 +7,35 @@ namespace Zoo
 {
     public class Animal : MonoBehaviour
     {
+        [SerializeField]
+        private GameObject Balloon;
+        [SerializeField]
+        private Text text;
+
+
         public Image image;
 
         public AnimalData animalData;
         public string animalName;
-        bool canDoTrick;
-        Diet diet;
+        public bool canDoTrick;
+        public Diet diet;
+        public string leavesReaction;
 
         // Start is called before the first frame update
         void Start()
         {
             image.sprite = animalData.artwork;
+            diet = animalData.diet;
 
             animalName = animalData.animalName;
+            leavesReaction = animalData.leavesReaction;
         }
 
-        // Update is called once per frame
-        void Update()
+        public void TextBubble(string text)
         {
-
+            Balloon.SetActive(true);
+            text = leavesReaction;
         }
+
     }
 }
