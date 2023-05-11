@@ -10,7 +10,7 @@ namespace Zoo
         [SerializeField]
         private GameObject Balloon;
         [SerializeField]
-        private Text text;
+        private Text textField;
 
 
         public Image image;
@@ -20,6 +20,7 @@ namespace Zoo
         public bool canDoTrick;
         public Diet diet;
         public string leavesReaction;
+        public string meatReaction;
 
         // Start is called before the first frame update
         void Start()
@@ -29,12 +30,13 @@ namespace Zoo
 
             animalName = animalData.animalName;
             leavesReaction = animalData.leavesReaction;
+            meatReaction = animalData.meatReaction;
         }
 
         public void TextBubble(string text)
         {
             Balloon.SetActive(true);
-            text = leavesReaction;
+            textField.text = text;
         }
 
     }

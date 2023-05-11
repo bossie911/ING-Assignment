@@ -20,5 +20,6 @@ namespace Zoo
         public Diet diet;
         public string helloReaction;
         public string leavesReaction;
+        public string meatReaction;
     }
 }
