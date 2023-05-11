@@ -16,5 +16,6 @@ MonoBehaviour:
   artwork: {fileID: 21300000, guid: 90d49343d111d524cadc737a76578cfd, type: 3}
   canDoTrick: 0
   diet: 1
-  helloReaction: 
+  helloReaction: splash
   leavesReaction: munch munch lovely
+  meatReaction: 

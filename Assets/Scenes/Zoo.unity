@@ -334,6 +334,17 @@ MonoBehaviour:
           m_StringArgument: All animals make their sound
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 887016509}
+        m_MethodName: Hello
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &259617504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -958,6 +969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animals: []
+  inputField: {fileID: 1717165944}
 --- !u!1 &1096552935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1494,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: All animals that can do a trick do them.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 887016509}
+        m_MethodName: DoTrick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1767294168

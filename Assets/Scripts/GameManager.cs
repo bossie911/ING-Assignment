@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 namespace Zoo
 {
@@ -9,13 +9,15 @@ namespace Zoo
     {
         public List<Animal> animals = new List<Animal>();
 
+        [SerializeField] private InputField inputField;
+
         public void GiveLeaves()
         {
             foreach (Animal animal in animals){
-                if (animal.diet == Diet.Herbivore || animal.diet == Diet.Omnivore)
+                if (animal.animalData.diet == Diet.Herbivore || animal.animalData.diet == Diet.Omnivore)
                 {
                     //Activate text
-                    animal.TextBubble(animal.leavesReaction);
+                    animal.TextBubble(animal.animalData.leavesReaction);
                 }
             }
         }
@@ -24,10 +26,10 @@ namespace Zoo
         {
             foreach (Animal animal in animals)
             {
-                if (animal.diet == Diet.Carnivore || animal.diet == Diet.Omnivore)
+                if (animal.animalData.diet == Diet.Carnivore || animal.animalData.diet == Diet.Omnivore)
                 {
                     //Activate text
-                    animal.TextBubble(animal.meatReaction);
+                    animal.TextBubble(animal.animalData.meatReaction);
                 }
             }
         }
@@ -38,8 +40,29 @@ namespace Zoo
             {
                 if (animal.animalData.canDoTrick == true)
                 {
-                    //Activate text
+                    //Do a trick
                     StartCoroutine(animal.DoTrick());
+                }
+            }
+        }
+
+        public void Hello()
+        {
+            if (inputField.text == "")
+            {
+                foreach (Animal animal in animals)
+                {
+                    animal.TextBubble(animal.animalData.helloReaction);
+                }
+            }
+            else
+            {
+                foreach (Animal animal in animals)
+                {
+                    if(animal.animalData.animalName == inputField.text)
+                    {
+                        animal.TextBubble(animal.animalData.helloReaction);
+                    }
                 }
             }
         }
