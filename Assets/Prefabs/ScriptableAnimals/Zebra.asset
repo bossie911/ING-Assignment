@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb4fa82e4983fb4bb85784363da88e3, type: 3}
   m_Name: Zebra
   m_EditorClassIdentifier: 
-  name: Zebra
+  animalName: marty
   artwork: {fileID: 21300000, guid: b46855b5a560d024690a7b1b0a3fbfe6, type: 3}
   canDoTrick: 0
   diet: 1
+  helloReaction: 

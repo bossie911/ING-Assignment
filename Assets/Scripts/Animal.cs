@@ -10,7 +10,7 @@ namespace Zoo
         public Image image;
 
         public AnimalData animalData;
-        string animalName;
+        public string animalName;
         bool canDoTrick;
         Diet diet;
 
@@ -18,6 +18,8 @@ namespace Zoo
         void Start()
         {
             image.sprite = animalData.artwork;
+
+            animalName = animalData.animalName;
         }
 
         // Update is called once per frame
