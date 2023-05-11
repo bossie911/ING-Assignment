@@ -8,28 +8,32 @@ namespace Zoo
     {
         [SerializeField] private GameManager gameManager;
 
-
         [SerializeField]
         private GameObject lion, hippo, pig, tiger, zebra;
 
-        //public List<Animal> animals = new List<Animal>();
         private void Start()
         {
             //Lion
-            Animal henk = Instantiate(lion, transform).GetComponent<Animal>();
-            gameManager.animals.Add(henk);
+            SpawnAnimal(lion, "henk");
+
             //Hippo
-            Animal elsa = Instantiate(hippo, transform).GetComponent<Animal>();
-            gameManager.animals.Add(elsa);
+            SpawnAnimal(hippo, "elsa");
+
             //Pig
-            Animal dora = Instantiate(pig, transform).GetComponent<Animal>();
-            gameManager.animals.Add(dora);
+            SpawnAnimal(pig, "dora");
+
             //Tiger
-            Animal wally = Instantiate(tiger, transform).GetComponent<Animal>();
-            gameManager.animals.Add(wally);
+            SpawnAnimal(tiger, "wally");
+
             //Zebra
-            Animal marty = Instantiate(zebra, transform).GetComponent<Animal>();
-            gameManager.animals.Add(marty);         
+            SpawnAnimal(zebra, "marty");
+        }
+
+        private void SpawnAnimal(GameObject type, string animalName)
+        {
+            Animal animal = Instantiate(type, transform).GetComponent<Animal>();
+            animal.animalName = animalName;
+            gameManager.animals.Add(animal);
         }
     }
 }

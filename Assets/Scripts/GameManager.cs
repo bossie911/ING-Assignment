@@ -41,7 +41,7 @@ namespace Zoo
                 if (animal.animalData.canDoTrick == true)
                 {
                     //Do a trick
-                    StartCoroutine(animal.DoTrick());
+                    StartCoroutine(Rotate(animal.gameObject));
                 }
             }
         }
@@ -59,11 +59,20 @@ namespace Zoo
             {
                 foreach (Animal animal in animals)
                 {
-                    if(animal.animalData.animalName == inputField.text)
+                    if(animal.animalName == inputField.text)
                     {
                         animal.TextBubble(animal.animalData.helloReaction);
                     }
                 }
+            }
+        }
+
+        private IEnumerator Rotate(GameObject animal)
+        {
+            for (int i = 0; i < 360; i++)
+            {
+                animal.transform.localRotation = Quaternion.Euler(i, 0, 0);
+                yield return new WaitForEndOfFrame();
             }
         }
     }

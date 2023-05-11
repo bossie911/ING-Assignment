@@ -12,6 +12,8 @@ namespace Zoo
         [SerializeField]
         private Text textField;
 
+        public string animalName;
+
 
         public Image image;
         public AnimalData animalData;
@@ -26,15 +28,6 @@ namespace Zoo
         {
             Balloon.SetActive(true);
             textField.text = text;
-        }
-
-        public IEnumerator DoTrick()
-        {
-            for (int i = 0; i < 360; i++)
-            {
-                transform.localRotation = Quaternion.Euler(i, 0, 0);
-                yield return new WaitForEndOfFrame();
-            }
         }
     }
 }
