@@ -39,5 +39,13 @@ namespace Zoo
             textField.text = text;
         }
 
+        public IEnumerator DoTrick()
+        {
+            for (int i = 0; i < 360; i++)
+            {
+                transform.localRotation = Quaternion.Euler(i, 0, 0);
+                yield return new WaitForEndOfFrame();
+            }
+        }
     }
 }

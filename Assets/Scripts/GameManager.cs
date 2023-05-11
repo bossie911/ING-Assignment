@@ -31,6 +31,18 @@ namespace Zoo
                 }
             }
         }
+
+        public void DoTrick()
+        {
+            foreach (Animal animal in animals)
+            {
+                if (animal.animalData.canDoTrick == true)
+                {
+                    //Activate text
+                    StartCoroutine(animal.DoTrick());
+                }
+            }
+        }
     }
 }
 
