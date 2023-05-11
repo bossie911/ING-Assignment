@@ -9,7 +9,7 @@ namespace Zoo
         [SerializeField] private GameManager gameManager;
 
         [SerializeField]
-        private GameObject lion, hippo, pig, tiger, zebra;
+        private GameObject lion, hippo, pig, tiger, zebra, wolf, elephant;
 
         private void Start()
         {
@@ -27,6 +27,12 @@ namespace Zoo
 
             //Zebra
             SpawnAnimal(zebra, "marty");
+
+            //Wolf
+            SpawnAnimal(wolf, "max");
+
+            //Elephant
+            SpawnAnimal(elephant, "dombo");
         }
 
         private void SpawnAnimal(GameObject type, string animalName)

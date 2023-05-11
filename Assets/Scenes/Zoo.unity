@@ -956,6 +956,9 @@ MonoBehaviour:
   pig: {fileID: 1898965610536965007, guid: 89283d23a0a431f45abe5d09006c299c, type: 3}
   tiger: {fileID: 1626913401794445951, guid: aa15f6dc4f506894da3d637dec9dbec2, type: 3}
   zebra: {fileID: 6829179019516418641, guid: 335df87c71f1dee429e8aa39f798cb37, type: 3}
+  wolf: {fileID: 5873099281534751016, guid: 829d4dc0f6bcfbd4888fa996687e05d1, type: 3}
+  elephant: {fileID: 5839115965551261466, guid: 4bf507b2028e0cf428a33b93ca04298f,
+    type: 3}
 --- !u!114 &887016509
 MonoBehaviour:
   m_ObjectHideFlags: 0

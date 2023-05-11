@@ -14,7 +14,6 @@ namespace Zoo
     [CreateAssetMenu(fileName = "New Animal", menuName = "Animal")] 
     public class AnimalData : ScriptableObject
     {
-        public string animalName;
         public Sprite artwork;
         public bool canDoTrick;
         public Diet diet;
