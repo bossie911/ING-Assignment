@@ -13,8 +13,6 @@ namespace Zoo
         private Text textField;
 
         public string animalName;
-
-
         public Image image;
         public AnimalData animalData;
 

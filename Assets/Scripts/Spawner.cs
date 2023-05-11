@@ -35,6 +35,7 @@ namespace Zoo
             SpawnAnimal(elephant, "dombo");
         }
 
+        //Function that spawns an animal and sets type and name
         private void SpawnAnimal(GameObject type, string animalName)
         {
             Animal animal = Instantiate(type, transform).GetComponent<Animal>();

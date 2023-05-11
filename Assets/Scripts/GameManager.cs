@@ -11,6 +11,7 @@ namespace Zoo
 
         [SerializeField] private InputField inputField;
 
+        //Functions that gives Leaves to the animals that can eat them
         public void GiveLeaves()
         {
             foreach (Animal animal in animals){
@@ -22,6 +23,7 @@ namespace Zoo
             }
         }
 
+        //Functions that gives meat to the animals that can eat it
         public void GiveMeat()
         {
             foreach (Animal animal in animals)
@@ -34,6 +36,7 @@ namespace Zoo
             }
         }
 
+        //Function that lets the animals that can do tricks do them
         public void DoTrick()
         {
             foreach (Animal animal in animals)
@@ -67,6 +70,7 @@ namespace Zoo
             }
         }
 
+        //Rotates an animal (trick)
         private IEnumerator Rotate(GameObject animal)
         {
             for (int i = 0; i < 360; i++)
